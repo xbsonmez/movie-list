@@ -4,6 +4,7 @@ import Head from "next/head";
 
 export const Detail = ({ movie }) => {
   const router = useRouter();
+  console.log('movie',movie);
 
   return (
     <div className={styles.centerDetailBody}>
@@ -23,26 +24,26 @@ export const Detail = ({ movie }) => {
               <div className={styles.customDetailCardItemText}>
                 <div class="col">
                   <div class="row">
-                    <div class="col-3">Title</div>{" "}
-                    <div class="col-9"> {movie.Title}</div>{" "}
+                    <div class="col-4">Title</div>{" "}
+                    <div class="col-8"> {movie.Title}</div>{" "}
                   </div>
                   <div class="row">
-                    <div class="col-3">Year:</div>{" "}
-                    <div class="col-9">{movie.Year}</div>
+                    <div class="col-4">Year:</div>{" "}
+                    <div class="col-8">{movie.Year}</div>
                   </div>
                   <div class="row">
-                    <div class="col-3">Director:</div> 
-                    <div class="col-9">
+                    <div class="col-4">Director:</div> 
+                    <div class="col-8">
                     {movie.Director}
                     </div>
                   </div>
                 <div class="row">
-                  <div class="col-3">Actors:</div>
-                  <div class="col-9">{movie.Actors}</div>
+                  <div class="col-4">Actors:</div>
+                  <div class="col-8">{movie.Actors}</div>
                 </div>
                 <div class="row">
-                  <div class="col-3">Rewards:</div>
-                  <div class="col-9">{movie.Rewards}</div>
+                  <div class="col-4">Awards:</div>
+                  <div class="col-8">{movie.Awards}</div>
                 </div>
                 </div>
               </div>
