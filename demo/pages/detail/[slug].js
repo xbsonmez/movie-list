@@ -4,7 +4,6 @@ import Head from "next/head";
 
 export const Detail = ({ movie }) => {
   const router = useRouter();
-  console.log('movie',movie);
 
   return (
     <div className={styles.centerDetailBody}>
